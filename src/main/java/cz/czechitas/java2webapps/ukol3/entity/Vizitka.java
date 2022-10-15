@@ -24,11 +24,70 @@ public class Vizitka {
         this.web = web;
     }
 
-
     private String celaAdresa(String ulice, String obecPSc) {
         this.ulice = ulice;
         this.obecPSc = obecPSc;
         return celaAdresa("", "");
+    }
+
+    public String getJmeno() {
+        return jmeno;
+    }
+
+    public void setJmeno(String jmeno) {
+        this.jmeno = jmeno;
+    }
+
+    public String getFirma() {
+        return firma;
+    }
+
+    public void setFirma(String firma) {
+        this.firma = firma;
+    }
+
+    public String getUlice() {
+        return ulice;
+    }
+
+    public void setUlice(String ulice) {
+        this.ulice = ulice;
+    }
+
+    public String getObecPSc() {
+        return obecPSc;
+    }
+
+    public void setObecPSc(String obecPSc) {
+        this.obecPSc = obecPSc;
+    }
+
+    public String getCelaAdresa() {
+        return celaAdresa;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTelefon() {
+        return telefon;
+    }
+
+    public void setTelefon(String telefon) {
+        this.telefon = telefon;
+    }
+
+    public String getWeb() {
+        return web;
+    }
+
+    public void setWeb(String web) {
+        this.web = web;
     }
 }
 

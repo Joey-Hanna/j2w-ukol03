@@ -13,9 +13,8 @@
 </head>
 <body>
 <div class="seznam">
-    [#list vizitky]
     <a href=jednotlivaVizitka?index?string>
-        [#items as detail]
+        [#list vizitky as jednotlivaVizitka]
             <div class="vizitka">
                 [#if jednotlivaVizitka.jmeno?exists]
                     <div class="jmeno">${jednotlivaVizitka.jmeno}</div>
@@ -45,7 +44,6 @@
                     </div>
                 </div>
             </div>
-        [/#items]
         [/#list]
     </a>
 </div>
