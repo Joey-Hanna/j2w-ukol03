@@ -27,7 +27,7 @@ public class VizitkyController {
         return modelAndView;
     }
 
-    @GetMapping("/detail{id}")
+    @GetMapping("/detail/{id}")
     public ModelAndView detail(@PathVariable int id) {
         ModelAndView modelAndView = new ModelAndView("detail");
         modelAndView.addObject("jednotlivaVizitka", seznamVizitek.get(id));

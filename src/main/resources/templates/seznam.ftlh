@@ -13,39 +13,37 @@
 </head>
 <body>
 <div class="seznam">
-    <a href=jednotlivaVizitka?index?string>
-        [#list vizitky as jednotlivaVizitka]
+    [#list vizitky as jednotlivaVizitka]
+        <a href="/detail/${jednotlivaVizitka?index}">?
             <div class="vizitka">
-                [#if jednotlivaVizitka.jmeno?exists]
-                    <div class="jmeno">${jednotlivaVizitka.jmeno}</div>
-                [/#if]
-                [#if jednotlivaVizitka.firma?exists]
-                    <div class="firma">${jednotlivaVizitka.firma}</div>
-                [/#if]
+                <div class="jmeno">${jednotlivaVizitka.jmeno}</div>
+                [#--                [#if jednotlivaVizitka.firma?exists]--]
+                <div class="firma">${jednotlivaVizitka.firma}</div>
+                [#--                [/#if]--]
                 <div class="udaje">
                     <div class="adresa">
-                        [#if jednotlivaVizitka.ulice?exists]
-                            <div>${jednotlivaVizitka.ulice}</div>
-                        [/#if]
-                        [#if jednotlivaVizitka.obecPSc?exists]
-                            <div>${jednotlivaVizitka.obecPSc}</div>
-                        [/#if]
+                        [#--                        [#if jednotlivaVizitka.ulice?exists]--]
+                        <div>${jednotlivaVizitka.ulice}</div>
+                        [#--                        [/#if]--]
+                        [#--                        [#if jednotlivaVizitka.obecPSc?exists]--]
+                        <div>${jednotlivaVizitka.obecPSc}</div>
+                        [#--                        [/#if]--]
                     </div>
                     <div class="kontakty">
-                        [#if jednotlivaVizitka.email?exists]
-                            <div><i class="las la-at"></i> <span>${jednotlivaVizitka.email}</span></div>
-                        [/#if]
-                        [#if jednotlivaVizitka.telefon?exists]
-                            <div><i class="las la-phone-alt"></i> <span>${jednotlivaVizitka.telefon}</span></div>
-                        [/#if]
-                        [#if jednotlivaVizitka.web?exists]
-                            <div><i class="las la-globe"></i> <span>${jednotlivaVizitka.web}</span></div>
-                        [/#if]
+                        [#--                        [#if jednotlivaVizitka.email?exists]--]
+                        <div><i class="las la-at"></i> <span>${jednotlivaVizitka.email}</span></div>
+                        [#--                        [/#if]--]
+                        [#--                        [#if jednotlivaVizitka.telefon?exists]--]
+                        <div><i class="las la-phone-alt"></i> <span>${jednotlivaVizitka.telefon}</span></div>
+                        [#--                        [/#if]--]
+                        [#--                        [#if jednotlivaVizitka.web?exists]--]
+                        <div><i class="las la-globe"></i> <span>${jednotlivaVizitka.web}</span></div>
+                        [#--                        [/#if]--]
                     </div>
                 </div>
             </div>
-        [/#list]
-    </a>
+        </a>
+    [/#list]
 </div>
 </body>
 </html>
